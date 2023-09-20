@@ -1,1 +1,47 @@
-<!-- Intentionally left blank -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  </head>
+  <body>
+    <main>
+      <h1>Our contact form</h1>
+
+      <form action="">
+        <fieldset>
+          <legend>Provide some personal information</legend>
+          <label for="name">Name</label>
+          <input
+            autocomplete="family-name"
+            required
+            minlength="2"
+            maxlength="10"
+            id="name"
+            type="text"
+            placeholder="Steve Rogers"
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="steve.rogers@marvel.com"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Your message</legend>
+          <label for="message">Message</label>
+          <textarea rows="10" id="message" placeholder="Lorem ipsum"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit your message</button>
+
+        <input type="submit" value="Submit your message this is an input" />
+      </form>
+    </main>
+  </body>
+</html>
