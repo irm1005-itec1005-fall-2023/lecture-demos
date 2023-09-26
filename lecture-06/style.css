@@ -1,0 +1,73 @@
+/* CSS */
+
+/*
+* {
+  border: 1px solid red;
+}
+*/
+
+body {
+  background-color:cadetblue;
+}
+/*
+h1 {
+  color: greenyellow;
+  border: 1px solid red;
+}
+
+p {
+  color: green;
+}
+*/
+
+/* Combination selector */
+
+h1, h2, h3, h4, h5, h6, p {
+  color: red;
+}
+
+h1 {
+  color:brown;
+}
+
+h2 {
+  color:brown;
+}
+
+h3 {
+  color: blue;
+}
+
+
+/* Descendent selector */
+
+header ul {
+  background-color: red;
+}
+
+ul {
+  background-color: azure;
+}
+
+section {
+  background-color: #49a078;
+}
+
+
+/* Class selector */
+
+.heading-wrapper {
+  background-color: #f2cc8f;
+}
+
+.find-beans-wrapper {
+  background-color: #49a078;
+}
+
+.section-background {
+  background-color: #49a078;
+}
+
+
+
+
