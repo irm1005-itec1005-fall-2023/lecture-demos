@@ -1,0 +1,21 @@
+/*
+selector {
+    property: value;
+}
+
+Properties and topics we want to explore:
+
+- Inheritance
+- Cascade (specificity)
+- color
+- border (width, style, color)
+- background color
+- background gradient (linear, radial)
+- text align (left, right, center, justify)
+
+- put a background colour on the body element
+- create a dark-box class and set the background color to dark and the text color to light
+- create a utility class to make the text a certain colour
+- make the h1 look nice
+
+*/
