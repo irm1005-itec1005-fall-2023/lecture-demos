@@ -21,3 +21,45 @@ Properties and topics we want to explore:
 - also look at block and inline elements and inline block elements
 
 */
+
+
+p {
+  color: black;
+}
+
+body {
+  background-color: #c7e6a3;
+  color: green;
+}
+
+section {
+  background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background-color: #f5f5f5;
+  color: greenyellow;
+  border: 10px solid red;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align:center;
+}
+
+.dark-text {
+  color:blueviolet;
+}
+
+.light-text {
+  color:brown;
+}
+
+.dark-box {
+  background-color: darkslategrey;
+  color: white;
+}
+
+
+.dark-box p {
+  color: white;
+}
+
