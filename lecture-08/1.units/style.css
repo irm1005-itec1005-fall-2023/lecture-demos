@@ -3,9 +3,22 @@
  * https://css-tricks.com/rems-ems/
  */
 
+
 html {
   /* Set the root font size */
+  font-size: 1rem;
 }
+
+h1 {
+  border: 1px solid red;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+
 
 
 /* And then REM will change based on the root font size */
