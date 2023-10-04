@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fbcee2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.vehicle-image {
+  margin-bottom: 2rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.vehicles-container {
+  display: flex;
+}
+
+.vehicle {
+  background-color: blue;
+  padding: 2.5rem;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.read-more {
+  margin-top: 4rem;
+}
+
+.btn{
+  margin-top: 3rem;
+  background-color: #3e38bf;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  text-decoration: none;
+}
+
+/*
+.vehicle-sedan {
+  background-color: #3e38bf;
+}
+*/
+
+.vehicle:nth-child(1) {
+  background-color: #f72585;
+}
+.vehicle:nth-child(2) {
+  background-color: #b5179e;
+}
+.vehicle:nth-child(3) {
+  background-color: #7209b7;
+}
+
