@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+main {
+
+  width: 400px;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+
+
+.coffee--image {
+  height: 300px;
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+
+}
+
+.coffee--content {
+  background-color: #fff;
+
+  padding: 2rem;
+
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.coffee-category {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #00bf72;
+}
+
+.coffee--title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #051937;
+
+  margin: 0.7rem 0 0.7rem 0;
+}
+
+.coffee--description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #051937;
+}
+
+.coffee--price {
+  font-size: 4.3rem;
+  font-weight: 700;
+  color: #00bf72;
+}
+
+.coffee--button {
+  display:inline-block;
+  text-align: center;
+  font-size: 1.7rem;
+
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+
+  width: 100%;
+
+  background-color: #051937;
+  padding: 0.5rem;
+
+  border-radius: 0.8rem;
+}
