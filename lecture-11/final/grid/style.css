@@ -1,0 +1,74 @@
+
+.grid-container {
+  margin: 3rem 0 0 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+
+  list-style-type: none;
+  padding: 0rem;
+}
+
+.grid-container > * {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.item-1 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: #fb5607;
+}
+
+.item-2 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start:4;
+  background-color: #ff006e;
+}
+
+.item-3 {
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+
+.item-4 {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+/*
+  CORE PAGE CSS - DO NOT MODIFY
+
+ https://coolors.co/palette/ffbe0b-fb5607-ff006e-8338ec-3a86ff
+
+*/
+
+
+html {
+  font-size: 1.6rem;
+}
+
+
+body {
+  background-color: #ffbe0b;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header h2 {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  color: #eaf4f4;
+  text-align: center;
+  font-size: 1.2rem;
+
+  background-color: #8338ec;
+}
+
+main {
+  margin: 0 1.3rem 5rem 1.3rem;
+}
