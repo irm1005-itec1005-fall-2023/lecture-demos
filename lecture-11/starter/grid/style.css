@@ -1,4 +1,38 @@
 
+.grid-container {
+  display:grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+
+  list-style-type: none;
+  padding: 0;
+}
+
+.grid-container > * {
+  padding: 2rem;
+  background-color: #fff;
+
+  border-radius: 1rem;
+}
+
+.item-1 {
+  grid-column-start: 2;
+  grid-column-end:4;
+  background-color: red;
+}
+
+.item-2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end:4;
+}
+
+.item-3 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
 
 
 /*
