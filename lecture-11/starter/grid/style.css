@@ -9,7 +9,7 @@
   padding: 0;
 }
 
-.grid-container > * {
+.grid-container > li {
   padding: 2rem;
   background-color: #fff;
 
