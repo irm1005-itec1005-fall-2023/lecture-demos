@@ -16,7 +16,28 @@ main {
   padding: 2rem;
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+
+.card-grid-right {
+  grid-column-start: 1;
+  grid-column-end: end;
+
+  padding: 1rem;
+  background-color: #e0dfd5;
+}
+
+@media (min-width: 800px) {
+  .card-grid-container {
+    width: 700px;
+    background-color: red;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card-grid-right {
+    grid-column-start: 2;
+  }
 }
 
 .card-grid-left {
@@ -31,13 +52,6 @@ main {
   object-fit: cover;
 }
 
-.card-grid-right {
-  grid-column-start: 2;
-  grid-column-end: end;
-
-  padding: 1rem;
-  background-color: #e0dfd5;
-}
 
 h1 {
   font-size: 1rem;
