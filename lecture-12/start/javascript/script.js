@@ -74,7 +74,7 @@ console.log(myNumber);
 // Be consistent with variable names
 let MyNextNumber = 10;
 let my_next_number = 20;
-let myNextNubmer = 30;
+let myNextNumber = 30;
 
 
 //
