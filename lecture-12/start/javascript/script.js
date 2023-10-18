@@ -39,9 +39,11 @@ console.log(myArray[5])
 
 
 // Null
+let todoItem = null;
 
-// Undefined
 
+// Undefined - DO NOT DO THIS
+let todoItem2 = undefined; // DO NOT DO THIS
 
 
 //
@@ -49,11 +51,30 @@ console.log(myArray[5])
 //
 
 // Arithmetic
+myNumber = myNumber + 10;
+myNumber ++; // Adds 1 to the variable
+
+console.log(myNumber);
+
 // Add to string together
+myFirstName = "Jamie";
+let myLastName = "Smith";
+let myFullName = myFirstName + " " + myLastName;
+
+// console.clear();
+console.log(myFullName);
 
 // Add two numbers together
 
 // Subtract two numbers
+myNumber = myNumber-30;
+
+console.log(myNumber);
+
+// Be consistent with variable names
+let MyNextNumber = 10;
+let my_next_number = 20;
+let myNextNubmer = 30;
 
 
 //
@@ -61,7 +82,19 @@ console.log(myArray[5])
 // using operators
 //
 
+let myUserAge = 41;
+
 // if
+if (myUserAge > 40) {
+    console.log("Damn dude! You are old!");
+}
+else if (myUserAge > 20) {
+  console.log(myUserAge, "You are just old enough to drink in Vegas!");
+}
+else {
+  console.log(myUserAge, "Sorry, you are too young to drink in Vegas.");
+}
+
 
 // if else
 
