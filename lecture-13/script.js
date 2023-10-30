@@ -17,7 +17,7 @@
 //
 
 // Console log is a function that prints to the console
-
+console.log("Hello how are you today");
 
 //
 // Basic Variables
@@ -26,12 +26,24 @@
 // Let's create a variable using the let keyword
 
 // String
+let myName = "John Doe";
+
+console.log(myName);
 
 // Number
+let myAge = 25;
+
+console.log(myAge);
 
 // Boolean
+let isStudent = false;
+
+console.log("Is John Doe a student: ", isStudent, myAge);
 
 // Array
+let myFavouriteFoods = ["pizza", "coffee", "cake"]; // Array of strings
+
+console.log(myFavouriteFoods);
 
 
 //
@@ -41,8 +53,18 @@
 // Let's create a variable using the const keyword
 
 // String
+const myOtherName = "Jane Doe";
+
+console.log(myOtherName);
+
+// myOtherName = "Jane Smith";
 
 // Number
+let myOtherAge = 30;
+
+myOtherAge = myOtherAge + 1;
+
+console.log(myOtherAge);
 
 // Boolean
 
@@ -58,19 +80,35 @@
 
 
 // Create an array of strings
-
+let myFavouriteCities = ["Toronto", "New York", "London", "Paris", "Tokyo", "Ottawa"];
 
 // Use the length property to show the number of items in the array
 
-
+console.log("Number of favourite cities: ", myFavouriteCities.length)
 // Use the array[] operator to access an item in the array
+
+console.log("Last in array", myFavouriteCities[5])
 
 
 // Use the array.push() operator to add an item to the end of the array
 
 
-// Use the array.pop() operator to remove an item from the end of the array
+myFavouriteCities.push("Vancouver");
+myFavouriteCities.push("Nice");
+myFavouriteCities.push("Gatineau");
+myFavouriteCities.push("Cornwall");
 
+
+console.log("Favourite cities updated: ", myFavouriteCities, myFavouriteCities.length);
+
+
+// Use the array.pop() operator to remove an item from the end of the array
+myFavouriteCities.pop();
+myFavouriteCities.pop();
+myFavouriteCities.pop();
+myFavouriteCities.pop();myFavouriteCities.pop();
+
+console.log("Favourite cities updated: ", myFavouriteCities);
 
 
 //
@@ -78,18 +116,41 @@
 //
 
 // Let's create two variables and compare them using operators
-
+let johnsAge = 25;
+let janesAge = 15;
 
 // if statement - if the condition is true, run the code inside the block (the curly braces)
-
+if( janesAge >= 20 ) {
+  // Code block to run if the condition is true
+  console.log("Jane is an adult");
+}
 
 // if else statement - if the condition is true, run the code inside the first block (the curly braces),
 //  otherwise run the code inside the second block (the curly braces)
+if( janesAge >= 20 ) {
+  // Code block to run if the condition is true
+  console.log("Jane is an adult");
+} else {
+  // Code block to run if the condition is false
+  console.log("Jane is not an adult");
+}
+
 
 
 // if else if else statement - if the first condition is true, run the code inside the first block (the curly braces),
 //  otherwise if the second condition is true, run the code inside the second block (the curly braces),
 //  otherwise run the code inside the third block (the curly braces)
+
+if( janesAge >= 40 ) {
+  // Code block to run if the condition is true
+  console.log("Jane is an older adult");
+} else if ( janesAge >= 20) {
+  // Code block to run if the condition is false
+  console.log("Jane is a younger adult");
+} else {
+  // Code block to run if the condition is false
+  console.log("Jane is definitely under 20");
+}
 
 
 
@@ -98,6 +159,8 @@
 //
 
 // Let's create a for loop that prints the numbers 1 through 10
+
+
 
 
 // Let's create an array and loop through it
