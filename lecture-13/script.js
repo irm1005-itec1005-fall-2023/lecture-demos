@@ -160,11 +160,21 @@ if( janesAge >= 40 ) {
 
 // Let's create a for loop that prints the numbers 1 through 10
 
-
+for (let i = 0 ; i < 10 ; i++) {
+  // Code to run
+  console.log("Index: ", i+1);
+  console.log(i);
+}
 
 
 // Let's create an array and loop through it
 // First we decalre an array of strings
+
+console.log(myFavouriteCities);
+
+for (let i=0; i < 5 ; i = i +1 ) {
+  console.log("City: ", myFavouriteCities[i]);
+}
 
 // Then we loop through the array and print each string to the console
 
