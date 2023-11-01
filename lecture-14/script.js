@@ -170,9 +170,14 @@ for (let i = 0 ; i < 10 ; i++) {
 // Let's create an array and loop through it
 // First we decalre an array of strings
 
-console.log(myFavouriteCities);
 
-for (let i=0; i < 5 ; i = i +1 ) {
+
+myFavouriteCities.push("Vancouver");
+myFavouriteCities.push("Nice");
+
+console.log("Length", myFavouriteCities.length);
+
+for (let i=0; i < myFavouriteCities.length ; i = i +1 ) {
   console.log("City: ", myFavouriteCities[i]);
 }
 
@@ -185,6 +190,24 @@ for (let i=0; i < 5 ; i = i +1 ) {
 // Then we loop through the array and print each string to the console as well as the index of the item
 
 // Then we use an if statement to check if the current item is the one we're looking for
+
+// Where is PARIS in my array
+
+console.log(myFavouriteCities);
+
+for (let i=0; i < myFavouriteCities.length ; i = i +1 ) {
+  if( myFavouriteCities[i] === "Paris") {
+    console.log("I found Paris at ", i);
+
+    myFavouriteCities[i] = "Berlin";
+  }
+
+
+
+  // console.log("City: ", myFavouriteCities[i]);
+}
+
+console.log(myFavouriteCities);
 
 
 
@@ -199,7 +222,53 @@ let productDescription = "A delicious pizza with tomato sauce and fresh mozzarel
 let productIngredients = ["tomato sauce", "fresh mozzarella cheese", "basil", "olive oil"];
 let productIsInStock = true;
 
+let productPrice1 = 15.99;
+let productTitle1 = "Meat Lover Pizza";
+let productDescription1 = "A delicious pizza with tomato sauce and fresh mozzarella cheese and meat";
+let productIngredients1 = ["tomato sauce", "fresh mozzarella cheese", "basil", "olive oil", "salami"];
+let productIsInStock1 = true;
+
 // Instead, let's create an object literal
+
+let product_1 = {
+  price: 10.99,
+  title: "Margherita Pizza",
+  description: "A delicious pizza with tomato sauce and fresh mozzarella cheese",
+  ingredients: ["tomato sauce", "fresh mozzarella cheese", "basil", "olive oil"],
+  isInStock: true,
+}
+
+let product_2 = {
+  price: 15.99,
+  title: "Meat Lover Pizza",
+  description: "A delicious pizza with tomato sauce and fresh mozzarella cheese and meat",
+  ingredients: ["tomato sauce", "fresh mozzarella cheese", "basil", "olive oil", "salami"],
+  isInStock: false,
+}
+
+
+let todo = {
+  id: 0,
+  text: "This is a todo",
+  completed: false,
+}
+
+
+console.log("Product 1", product_1);
+
+product_1.price = 15.99;
+product_1.title = "Joe's best pizza name";
+product_1.ingredients.push("Dough");
+product_1.ingredients.push("More Cheese");
+
+console.log("Product 1 after price update", product_1);
+
+
+console.log(todo);
+
+todo.completed = true;
+
+console.log(todo);
 
 
 // Use an if statement to see if the product is in stock
@@ -215,6 +284,17 @@ let productIsInStock = true;
 
 // Functions are reusable blocks of code that can be called multiple times
 
+console.clear();
+
+// Function deceleration - let's create a function that prints a message to the console
+function printName() {
+  console.log("John Doe");
+}
+
+// Actually running the function
+printName();
+
+
 
 // Let's create a function that prints a message to the console
 
@@ -226,3 +306,22 @@ let productIsInStock = true;
 
 
 // Let's call the function
+
+
+// Array of objects - let's create an array of pokemon objects
+
+
+// Find
+let pokemons = [
+  { name: 'Pikachu', type: 'Electric', level: 10 },
+  { name: 'Charmander', type: 'Fire', level: 15 },
+  { name: 'Bulbasaur', type: 'Grass', level: 20 },
+  { name: 'Squirtle', type: 'Water', level: 25 },
+  { name: 'Jigglypuff', type: 'Normal', level: 12 },
+  { name: 'Meowth', type: 'Normal', level: 16 },
+  { name: 'Psyduck', type: 'Water', level: 18 },
+  { name: 'Machop', type: 'Fighting', level: 22 },
+  { name: 'Geodude', type: 'Rock', level: 14 },
+  { name: 'Gastly', type: 'Ghost', level: 19 }
+];
+
