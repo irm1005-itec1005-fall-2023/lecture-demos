@@ -291,12 +291,28 @@ function printName() {
   console.log("John Doe");
 }
 
+
 // Actually running the function
 printName();
 
+// Arguments / Parameters
 
+function printNameWithParameter(name) {
+  console.log(name);
+}
+
+printNameWithParameter("Neil Mispelaar and John Doe");
 
 // Let's create a function that prints a message to the console
+
+function printFullName(fName, lName, isStudent) {
+  console.log(fName, lName, isStudent);
+}
+
+printFullName("Neil", "Mispelaar", false);
+
+printFullName("Neil", false);
+
 
 
 // Let's call the function
@@ -310,6 +326,19 @@ printName();
 
 // Array of objects - let's create an array of pokemon objects
 
+/*
+let pokemon_1 =  {
+   name: 'Pikachu',
+   type: 'Electric',
+   level: 10
+  }
+
+let pokemonArray = [
+  { name: 'Pikachu', type: 'Electric', level: 10 },
+  { name: 'Charmander', type: 'Fire', level: 15 },
+  { name: 'Bulbasaur', type: 'Grass', level: 20 },
+];
+*/
 
 // Find
 let pokemons = [
@@ -325,3 +354,37 @@ let pokemons = [
   { name: 'Gastly', type: 'Ghost', level: 19 }
 ];
 
+// List all pokemons with a level higher than 20
+
+for (let i = 0; i < pokemons.length; i = i +1 ) {
+  if (pokemons[i].level > 20) {
+    console.log(pokemons[i].name, " has a higher level than 20");
+  }
+  else {
+    console.log(pokemons[i].name, " has a lower level than 20");
+  }
+
+}
+
+console.clear();
+
+// List all pokemons with a type of water
+for (let i = 0; i < pokemons.length; i = i +1 ) {
+
+  if (pokemons[i].type === "Water" ) {
+    console.log("Water Pokemon: ", pokemons[i].name);
+  }
+
+}
+
+
+// List all pokemons with a type of Normal and change the type to Awesome
+for (let i = 0; i < pokemons.length; i = i +1 ) {
+
+  if (pokemons[i].type === "Normal" ) {
+    pokemons[i].type = "Awesome";
+  }
+
+}
+
+console.log(pokemons);
