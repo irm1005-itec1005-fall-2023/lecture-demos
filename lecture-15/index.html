@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+
+<head>
+  <!-- Set the page title -->
+  <title>Lecture Demo</title>
+
+  <!-- Set the charset we're using to UTF-8 -->
+  <meta charset="utf-8" />
+
+  <!-- Set the screens default zoom / scale to 1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Specifies the document mode for Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Set the CSS Reset File -->
+  <link rel="stylesheet" href="./reset.css" />
+
+  <!-- Set some basic CSS for the header and body -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Set the Favicon  -->
+  <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+
+</head>
+
+<body>
+
+  <header>
+    <h2>Lecture 15 - The DOM</h2>
+  </header>
+
+  <main>
+
+    <div class="container">
+
+      <h1>DOM manipulation class exercises</h1>
+
+      <ol>
+        <li>Selecting HTML elements</li>
+        <li>Modifying classes</li>
+        <li>Changing HTML elements</li>
+      </ol>
+
+      <section>
+
+        <h2>Selecting HTML elements</h2>
+
+        <section>
+
+          <h3>document.getElementById("id")</h3>
+
+          <div class="selecting-targets-1">
+            <ul id="selecting-targets-1-list">
+              <li id="selecting-targets-1-target-1">Target 1</li>
+              <li id="selecting-targets-1-target-2">Target 2</li>
+              <li id="selecting-targets-1-target-3">Target 3</li>
+              <li id="selecting-targets-1-target-4">Target 4</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+
+          <h3>document.getElementsByClassName("class")</h3>
+
+          <div class="selecting-targets-1">
+            <ul class="selecting-targets-2-list">
+              <li id="selecting-targets-1-target-1">Target 1</li>
+              <li id="selecting-targets-1-target-2">Target 2</li>
+              <li id="selecting-targets-1-target-3">Target 3</li>
+              <li id="selecting-targets-1-target-4">Target 4</li>
+            </ul>
+          </div>
+
+        </section>
+
+        <section>
+
+          <h3>document.querySelector(".class")</h3>
+
+          <div class="selecting-targets-1">
+            <ul class="selecting-targets-3-list">
+              <li class="selecting-targets-3-target-1">Target 1</li>
+              <li class="selecting-targets-3-target-2">Target 2</li>
+              <li class="selecting-targets-3-target-3">Target 3</li>
+              <li class="selecting-targets-3-target-4">Target 4</li>
+            </ul>
+          </div>
+
+        </section>
+
+        <section>
+
+          <h3>document.querySelector("#id")</h3>
+
+          <div class="selecting-targets-1">
+            <ul class="selecting-targets-4-list">
+              <li id="selecting-targets-4-target-1">Target 1</li>
+              <li id="selecting-targets-4-target-2">Target 2</li>
+              <li id="selecting-targets-4-target-3">Target 3</li>
+              <li id="selecting-targets-4-target-4">Target 4</li>
+            </ul>
+          </div>
+
+        </section>
+
+        <section>
+
+          <h3>document.querySelectorAll(".class")</h3>
+
+          <div class="selecting-targets-1">
+            <ul class="selecting-targets-5-list">
+              <li class="selecting-targets-5-target-1">Target 1</li>
+              <li class="selecting-targets-5-target-2">Target 2</li>
+              <li class="selecting-targets-5-target-3">Target 3</li>
+              <li class="selecting-targets-5-target-4">Target 4</li>
+            </ul>
+          </div>
+
+        </section>
+
+      </section>
+
+      <section>
+
+        <h2>Modifying Classes</h2>
+
+        <section>
+
+          <h3>Add and remove classes</h3>
+
+          <div class="mc-1">
+            <ul class="mc-1-list">
+              <li id="mc-1-list-item-1">Target 1</li>
+              <li id="mc-1-list-item-2">Target 2</li>
+              <li id="mc-1-list-item-3" class="done">Target 3</li>
+              <li id="mc-1-list-item-4">Target 4</li>
+            </ul>
+          </div>
+        </section>
+
+      </section>
+
+
+      <section>
+
+        <h2>Manipulating HTML elements</h2>
+
+        <section>
+
+          <h3>Oh look, a list - let's add to it</h3>
+
+          <ul id="manipulating-targets-1"></ul>
+
+        </section>
+
+        <section>
+
+          <h3>Let's add list items from an array</h3>
+
+          <ul id="manipulating-targets-2"></ul>
+
+        </section>
+
+        <section>
+
+          <h3>Let's add list items from a more complicated array</h3>
+
+          <ul id="manipulating-targets-3"></ul>
+
+        </section>
+
+        <section>
+
+          <h3>Let's remove a list item</h3>
+
+          <ul id="manipulating-targets-4">
+            <li id="manipulating-targets-4-item-1">Item 1</li>
+            <li id="manipulating-targets-4-item-2">Item 2</li>
+            <li id="manipulating-targets-4-item-3">Item 3</li>
+            <li id="manipulating-targets-4-item-4">Item 4</li>
+            <li id="manipulating-targets-4-item-5">Item 5</li>
+            <li id="manipulating-targets-4-item-6">Item 6</li>
+          </ul>
+
+        </section>
+
+        <section>
+
+          <h3>Let's add more complicated list items</h3>
+
+          <ul id="manipulating-targets-5">
+            <li>
+              <h4>Lorem, ipsum dolor.</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis, tempore.
+              </p>
+              <a href="#">Hello world</a>
+            </li>
+          </ul>
+
+        </section>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <!--
+    Add scripts at the bottom of the page
+
+    This is so that the browser can load the HTML and CSS first, and then bolt on the JS
+
+    Some tutorials, youtube videos, and chatGPT may
+    say to put scripts at the top, but you know better now!
+  -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
