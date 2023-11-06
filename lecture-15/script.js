@@ -175,15 +175,30 @@ console.log("Lecture 15");
 // using the getElementById function
 // and store it in a variable called i1ListItem
 
-// Use console log to validate that you have the correct element
+let i1ListItem = document.getElementById("selecting-targets-1-target-3");
 
+
+
+// Use console log to validate that you have the correct element
+console.log(i1ListItem);
 
 // Use style.transform="rotate(20deg)" to rotate the element 20 degrees
+
+i1ListItem.style.transform = "rotate(50deg)";
+
+i1ListItem.style.backgroundColor = "red";
 
 // Lets do another one.
 // Find the following ID in the dom selecting-targets-1-target-2
 // using the getElementById function
 // and store it in a variable called i2ListItem
+
+
+let i2ListItem = document.getElementById("selecting-targets-1-target-2");
+
+i2ListItem.style.transform = "rotate(-30deg)";
+
+
 
 // Use style.transform="rotate(-10deg)" to rotate the element 10 degrees the other way
 
@@ -197,15 +212,27 @@ console.log("Lecture 15");
 // using the getElementsByClassName function
 // and store it in a variable called i3UnorderedList
 
+i3ElementsByClassName = document.getElementsByClassName("selecting-targets-1");
+
 // Use console log to validate that you have the correct element
+console.log(i3ElementsByClassName);
 
 // Use style.transform="rotate(-60deg)" to rotate the element 60 degrees the other way
+
+
+i3ElementsByClassName[1].style.transform = "rotate(-30deg)";
 
 
 
 //
 // document.querySelector(".class")
 //
+
+let i4ListItem = document.querySelector("#selecting-targets-4-target-1");
+
+console.log(i4ListItem);
+
+i4ListItem.style.transform = "rotate(30deg) scale(1.5)";
 
 // Find the following class in the dom selecting-targets-3-target-1
 // using the getElementsByClassName function
@@ -242,11 +269,22 @@ console.log("Lecture 15");
 // using the getElementById function
 // and store it in a variable called i6ItemToChange
 
+
+
+let i5ListItem = document.getElementById("mc-1-list-item-4");
+
+i5ListItem.classList.add("done");
+
 // Use console log to validate that you have the correct element
 
 // Use classList.add("done") to add the class done to the element
 
 // Use classList.remove("done") to remove the class done from the element
+let i6ListItem = document.getElementById("mc-1-list-item-3");
+
+i6ListItem.classList.remove("done");
+
+i6ListItem.style.transform = "rotate(30deg)";
 
 // Select all of the list items in the mc-1-list and store them in a variable called i7CollectionOfChildren
 
@@ -258,7 +296,16 @@ console.log("Lecture 15");
 
 // Create a reference to the dom element list with the id manipulating-targets-1
 
+let i7List = document.getElementById("manipulating-targets-1");
+
 // Create a new list item using createElement and store it in a variable
+
+let i8myNewListItem = document.createElement("li");
+
+i8myNewListItem.textContent = "Item 1 in the list";
+
+i7List.appendChild(i8myNewListItem);
+
 
 // Use the textContent property to set the text of the list item to "Item 1 in the list"
 
@@ -277,6 +324,20 @@ console.log("Lecture 15");
 const colours = ["purple", "gold", "red", "green", "hotpink", "orange"];
 
 // Create a reference to the dom element list with the id manipulating-targets-2
+
+
+
+let i8List = document.getElementById("manipulating-targets-2");
+
+for(let i = 0; i < colours.length; i++) {
+
+let i9myNewListItem = document.createElement("li");
+
+i9myNewListItem.textContent = colours[i];
+
+i8List.appendChild(i9myNewListItem);
+
+}
 
 // Use a for loop to loop through the array and add each item to the list
 // Inside the foor loop you will have to create a new list item using createElement
