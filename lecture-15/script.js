@@ -13,6 +13,11 @@
 //  Solving problems with loops and conditionals
 //
 
+function shoutHello(){
+  console.log("Hellofrom Shout!");
+}
+
+shoutHello();
 
 //
 // Functions
@@ -23,6 +28,12 @@
 
 // Just declaring a function won't make it run - you have to actually call the function to run it
 
+
+function shoutHelloWithName(name){
+  console.log("Hello from Shout!" + name);
+}
+
+shoutHelloWithName(false);
 
 //
 // Arguments / Parameters
@@ -35,6 +46,14 @@
 
 // Let's create a function that takes in multiple parameters and prints a message to the console
 
+function shoutHelloWithNames(name1,name2,name3,name4){
+
+  let name5 = "George";
+
+  console.log("Hello from Shout!" + name1 + name2 + name3 + name4 + name5 + " George");
+}
+
+shoutHelloWithNames("Jane", "John", "Bob", "Sally");
 // Let's call the function
 
 
@@ -43,14 +62,23 @@
 //  let's create an array of pokemon objects
 //
 
+let pokemonName = "pikachu";
+let pokemonType = "Electric";
+let pokemonLevel = 10;
+
 let pokemon_1 = {
   name: 'Pikachu',
   type: 'Electric',
   level: 10
 }
 
+console.log("Pokemon name: " , pokemon_1.level);
+
+let cities = ["Paris", "Toronto", "New York", "London", "Tokyo"];
+
 // Find
 let pokemons = [
+  pokemon_1,
   {
     name: 'Pikachu',
     type: 'Electric',
@@ -105,6 +133,17 @@ let pokemons = [
 
 // Use a for loop to list all pokemons with a level higher than 20
 
+for (let i=0; i < pokemons.length; i++)
+{
+
+  if (pokemons[i].level > 20) {
+    console.log(pokemons[i].name);
+  }
+  else {
+    console.log(pokemons[i].name , " Has a Level is not greater than 20");
+  }
+}
+
 
 // Use a for loop to List all pokemons with a type of water
 
@@ -120,6 +159,8 @@ for (let i = 0; i < pokemons.length; i = i + 1) {
 }
 
 console.log(pokemons);
+
+console.clear();
 
 // Console log is a function that prints to the console
 console.log("Lecture 15");
