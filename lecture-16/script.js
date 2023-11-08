@@ -134,6 +134,20 @@ pokemonCount.textContent = pokemons.length;
 // Display a bit more complicated List
 //
 
+let pokemonList = document.getElementById("pokemon-list-1");
+
+console.log(pokemonList)
+
+for (let i = 0; i < pokemons.length; i++) {
+
+  let tempPokemon = document.createElement("li");
+
+  tempPokemon.textContent = pokemons[i].name + " - " + pokemons[i].level;
+
+  pokemonList.appendChild(tempPokemon);
+
+}
+
 /*
 
 <li class="pokemon-list-item">
@@ -146,12 +160,16 @@ pokemonCount.textContent = pokemons.length;
 
 
 
+
 //
 // Use Inner HTML
 //
 
 
-// Create a reference to the dom element list from the id manipulating-targets-5
+
+
+// Create a reference to the dom element list from the id
+let pokemonAdvancedList = document.getElementById("pokemon-list-2");
 
 // Create a new list item using createElement and store it in a variable
 
@@ -160,6 +178,22 @@ pokemonCount.textContent = pokemons.length;
 // Use innerHTML to set the inner html of the list item to the template literal
 
 // Use appendChild to add the list item to the list
+
+for (let i = 0; i < pokemons.length; i++) {
+
+  let tempPokemon =
+  `
+  <li class="pokemon-list-item">
+
+            <h3 class="pokemon-list-item-name">${pokemons[i].name}</h3>
+            <p class="pokemon-list-item-level">Level: ${pokemons[i].level} </p>
+            <p class="pokemon-list-item-type">Type: ${pokemons[i].type}</p>
+          </li>
+  `
+  pokemonAdvancedList.innerHTML = pokemonAdvancedList.innerHTML + tempPokemon;
+
+}
+
 
 
 
