@@ -10,6 +10,14 @@
 // Console log is a function that prints to the console
 console.log("🥰 Lecture 16");
 
+
+let highestLevelSpan = document.getElementById("pokemon-highest-level");
+
+console.log(highestLevelSpan);
+
+highestLevelSpan.textContent = "HAHAHHA";
+
+
 //
 // Find the highest level Pokemon
 //
@@ -73,15 +81,53 @@ let pokemons = [
 
 // Use a for loop to loop through all of the pokemons and add each one to the list
 
+let highestIndex = 0;
+
+
+for (let i = 0; i < pokemons.length; i++)
+{
+  console.log("Current index", i);
+  console.log("Current index", pokemons[i].level);
+  console.log("Current highest level at highest index", pokemons[highestIndex].level);
+
+  if (pokemons[i].level >= pokemons[highestIndex].level) {
+    highestIndex = i;
+
+    console.log("Highest index", highestIndex);
+  }
+  console.log(pokemons[i].level);
+}
+
+/*
+// Calculelate the hightest level pokemon
+for (let i = 0; i < pokemons.length; i++){
+  if (pokemons[i].level >= pokemons[highestIndex].level) {
+    highestIndex = i;
+  }
+}
+*/
+
+console.log("Highest index", highestIndex);
+
 
 // Use a for loop to loop through all of the pokemons and find out which one is the highest
 
 // Find the following ID in the dom pokemon-highest-level
+/*
+let highestLevelSpan = document.getElementById("pokemon-highest-level");
 
+console.log(highestLevelSpan);
+*/
+highestLevelSpan.textContent = pokemons[highestIndex].name;
 // Set the textContent of the element to the name of highest level pokemon
 
-console.clear();
+// console.clear();
 
+
+
+let pokemonCount  = document.getElementById("pokemon-length");
+
+pokemonCount.textContent = pokemons.length;
 
 
 //
