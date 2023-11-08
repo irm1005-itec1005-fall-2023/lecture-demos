@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+
+<head>
+  <!-- Set the page title -->
+  <title>Lecture Demo</title>
+
+  <!-- Set the charset we're using to UTF-8 -->
+  <meta charset="utf-8" />
+
+  <!-- Set the screens default zoom / scale to 1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Specifies the document mode for Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Set the CSS Reset File -->
+  <link rel="stylesheet" href="./reset.css" />
+
+  <!-- Set some basic CSS for the header and body -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Set the Favicon  -->
+  <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+
+</head>
+
+<body>
+
+  <header>
+    <h2>Lecture 16 - More DOM</h2>
+  </header>
+
+  <main>
+
+    <div class="container">
+
+      <h1>DOM manipulation class exercises</h1>
+
+      <ol>
+        <li>Find the highest level Pokemon</li>
+        <li>Working with more complex lists</li>
+        <li>Oh look events</li>
+      </ol>
+
+
+      <!-- Display a list of Pokemon and then find the highest level Pokemon -->
+      <section>
+
+        <h2>Find the highest level Pokemon</h2>
+
+        <ul id="pokemon-list-1">
+        </ul>
+
+        <p>The highest level Pokenmon is <span id="pokemon-highest-level">No data</span></p>
+
+      </section>
+
+
+      <!-- Let's display List of Pokemon but have more interesting data in the list -->
+      <section>
+
+        <h2>This is a much cooler list of Pokemon</h2>
+
+        <ul class="pokemon-list" id="pokemon-list-2">
+          <li class="pokemon-list-item">
+            <h3 class="pokemon-list-item-name">Pikachu</h3>
+            <p class="pokemon-list-item-level">Level: 5</p>
+            <p class="pokemon-list-item-type">Type: Electric</p>
+          </li>
+        </ul>
+
+      </section>
+
+
+
+      <!-- Let's start with an event listener! -->
+      <section>
+
+        <h2>Oh look, events!</h2>
+
+        <p>Click the button below</p>
+
+        <button class="btn-primary" id="btn-1">This is the way. Click me!</button>
+
+      </section>
+
+
+       <!-- Let's start with an event listener! -->
+       <section>
+
+        <h2>Don't use inline:</h2>
+
+        <button
+            id="btn-2"
+            onclick="console.log('Hello world');"
+            class="btn-primary"
+          >
+            No inline!
+          </button>
+
+      </section>
+
+      <!-- Let's start with an event listener! -->
+      <section>
+
+        <h2>And don't use onclick:</h2>
+
+        <button id="btn-3" class="btn-primary">And no onclick parameter!</button>
+
+      </section>
+
+
+
+    </div>
+
+  </main>
+
+  <!--
+    Add scripts at the bottom of the page
+
+    This is so that the browser can load the HTML and CSS first, and then bolt on the JS
+
+    Some tutorials, youtube videos, and chatGPT may
+    say to put scripts at the top, but you know better now!
+  -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
