@@ -141,7 +141,7 @@ for (let i = 0; i < pokemons.length; i++) {
 //
 
 // Create a reference to the dom element list from the id
-pokemonAdvancedList = document.getElementById("pokemon-list-3");
+pokemonAdvancedList = document.getElementById("pokemon-list-2");
 
 // Create a new list item using createElement and store it in a variable
 
@@ -152,6 +152,39 @@ pokemonAdvancedList = document.getElementById("pokemon-list-3");
 // Use appendChild to add the list item to the list
 
 
+for (let i = 0; i < pokemons.length; i++) {
+
+  // let tempPokemon =
+  // `
+  // <li class="pokemon-list-item">
+  //   <h3 class="pokemon-list-item-name">${pokemons[i].name}</h3>
+  //   <p class="pokemon-list-item-level">Level: ${pokemons[i].level} </p>
+  //   <p class="pokemon-list-item-type">Type: ${pokemons[i].type}</p>
+  // </li>
+  // `
+  let tempPokemn = document.createElement("li");
+
+
+  let tempName = document.createElement("h3");
+
+
+  tempName.textContent = pokemons[i].name;
+
+  let tempLevel = document.createElement("p");
+
+  tempLevel.textContent = "Level: " + pokemons[i].level;
+
+  let tempType = document.createElement("p");
+
+  tempType.textContent = "Type: " + pokemons[i].type;
+
+  tempPokemn.appendChild(tempName);
+  tempPokemn.appendChild(tempLevel);
+  tempPokemn.appendChild(tempType);
+
+  pokemonAdvancedList.appendChild(tempPokemn)
+
+}
 
 //
 // Remove a specific item
@@ -180,11 +213,22 @@ pokemonAdvancedList = document.getElementById("pokemon-list-3");
 // Get a reference to the button
 // const btn1 = document.querySelector("#btn-1");
 
+let myFirstButton = document.getElementById("btn-1");
+
+// console.log(myFirstButton);
+
 // Check that we have the right button
 // console.log(btn1);
 
 // Add an event listener to the button
 // btn1.addEventListener("click", greet);
+
+myFirstButton.addEventListener("click",shout)
+
+function shout() {
+  console.log("HELLO WORLD");
+}
+
 
 // Create a simple function that will be called when the button is clicked
 // function greet(event) {
@@ -192,7 +236,9 @@ pokemonAdvancedList = document.getElementById("pokemon-list-3");
 // }
 
 // Get a reference to the button
-// const btn3 = document.querySelector("#btn-3");
+const btn3 = document.querySelector("#btn-3");
+
+btn3.onclick=shout;
 
 // NO
 // btn3.onclick = function () {
@@ -219,38 +265,66 @@ pokemonAdvancedList = document.getElementById("pokemon-list-3");
 //
 
 // Get a reference to the form
-const form = document.querySelector("#form-1");
+//const form = document.querySelector("#form-1");
+
+let formA = document.getElementById("form-1");
+
+formA.addEventListener("submit",handleWhenAUserClickedSubmit);
+
+let inputNumber = document.getElementById("number-input");
+
+let numbersListOfThings = document.getElementById("form-results-1");
+
+function handleWhenAUserClickedSubmit(event){
+
+  // Prevent the default behavior of the form
+  event.preventDefault();
+
+  // Console log the value of the input
+  console.log("USER ENTERED:" , inputNumber.value);
+
+
+  let tempNumber = document.createElement("li");
+
+  tempNumber.textContent = inputNumber.value;
+
+  numbersListOfThings.prepend(tempNumber);
+
+  inputNumber.value= "";
+
+  console.log("Form Submitted");
+}
 
 // Add an event listener to the form
-form.addEventListener("submit", handleSubmit);
+//form.addEventListener("submit", handleSubmit);
 
 // Create a simple function that will be called when the form is submitted
-function handleSubmit(event) {
+//function handleSubmit(event) {
 
-    // Prevent the default behavior of the form
-    event.preventDefault();
+//     // Prevent the default behavior of the form
+//     event.preventDefault();
 
-    // Get a reference to the input
-    const input = document.querySelector("#number-input");
+//     // Get a reference to the input
+//     const input = document.querySelector("#number-input");
 
-    // Get the value of the input
-    const inputValue = input.value;
+//     // Get the value of the input
+//     const inputValue = input.value;
 
-    // Create a reference to the list
-    const list = document.querySelector("#form-results");
+//     // Create a reference to the list
+//     const list = document.querySelector("#form-results");
 
-    // Create a new list item
-    const listItem = document.createElement("li");
+//     // Create a new list item
+//     const listItem = document.createElement("li");
 
-    // Set the text content of the list item to the input value
-    listItem.textContent = inputValue;
+//     // Set the text content of the list item to the input value
+//     listItem.textContent = inputValue;
 
-    // Add the list item to the list
-    list.appendChild(listItem);
+//     // Add the list item to the list
+//     list.appendChild(listItem);
 
-    // Clear the input
-    input.value = "";
-}
+//     // Clear the input
+//     input.value = "";
+// }
 
 
 
