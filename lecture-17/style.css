@@ -1,0 +1,410 @@
+/*
+  CORE PAGE CSS - DO NOT MODIFY
+
+https://coolors.co/palette/10002b-240046-3c096c-5a189a-7b2cbf-9d4edd-c77dff-e0aaff
+
+*/
+
+
+/*
+ * VARIABLES
+ */
+:root {
+
+  /* Core colours */
+
+  --colour-blue-900: #16425b;
+  --colour-blue-800: #2f6690;
+  --colour-blue-700: #3a7ca5;
+  --colour-blue-600: #4e9ab1;
+  --colour-blue-500: #81c3d7;
+  --colour-blue-400: #a7d6e1;
+  --colour-blue-300: #c8e0e9;
+  --colour-blue-200: #d9dcd6;
+
+  --colour-orange-950: #602203;
+  --colour-orange-900: #a23500;
+  --colour-orange-800: #b84c00;
+  --colour-orange-700: #c95e00;
+  --colour-orange-600: #e76f00;
+  --colour-orange-500: #ff6b35;
+  --colour-orange-400: #ff7f41;
+  --colour-orange-300: #ff9366;
+  --colour-orange-200: #ffb488;
+
+
+  --colour-purple-900: #10002b;
+  --colour-purple-800: #240046;
+  --colour-purple-700: #3c096c;
+  --colour-purple-600: #5a189a;
+  --colour-purple-500: #7b2cbf;
+  --colour-purple-400: #9d4edd;
+  --colour-purple-300: #c77dff;
+  --colour-purple-200: #e0aaff;
+
+  --colour-jagged-ice: #bee9e8;
+  --colour-fountain-blue: #62b6cb;
+  --colour-dark-grey-blue: #183d54;
+  --colour-darker-grey-blue: #0f2634;
+  --colour-french-pass: #cae9ff;
+  --colour-blue-koi: #5fa8d3;
+
+  /* Header configuration */
+  --header-heading-colour: var(--colour-orange-200);
+  --header-background-colour: var(--colour-orange-900);
+
+  /* Body configuration */
+  --body-default-colour: var(--colour-orange-950);
+  --body-background-colour: var(--colour-orange-200);
+  --body-heading-colour: var(--colour-orange-950);
+}
+
+/*
+ * CORE STYLES
+ */
+
+html {
+  font-size: 1.2rem;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--body-default-colour);
+  background-color: var(--body-background-colour);
+}
+
+header h2 {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+
+  color: var(--header-heading-colour);
+  background-color: var(--header-background-colour);
+}
+
+main {
+  margin: 0 1.3rem 5rem 1.3rem;
+}
+
+h1 {
+  color: var( --body-heading-colour);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+h2 {
+  color: var( --body-heading-colour);
+  font-size: 1.0rem;
+}
+
+h3 {
+  color: var( --body-heading-colour);
+  font-size: 0.9rem;
+}
+
+main > section {
+  border-bottom: 20px solid white;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+/*
+ * UTILITIES
+ */
+.container {
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 0 1rem;
+}
+
+/*
+ * BUTTONS
+ */
+/*
+  BUTTONS
+*/
+
+.btn-primary {
+  margin: 1rem 0;
+  appearance: none;
+  background-color: #322ea4;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.btn-primary:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-primary:hover {
+  background-color: #2c4397;
+}
+
+.btn-primary:focus {
+  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: default;
+}
+
+.btn-primary:active {
+  background-color: #213a93;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+}
+
+/*
+ * POKEMON
+ */
+
+ul.pokemon-list {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li.pokemon-list-item {
+
+  background-color: var(--colour-orange-800);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  margin: 1rem 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+h3.pokemon-list-item-name {
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  font-size: 2rem;
+  color: var(--colour-orange-200)
+}
+
+
+li.pokemon-list-item p {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(---colour-jagged-ice)
+}
+
+/*
+ * SELECTING TARGETS
+ */
+
+.selecting-targets-1 {
+  margin-top: 50px;
+}
+
+.selecting-targets-1 ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 3rem;
+  column-gap: 1rem;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.selecting-targets-1 ul li {
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  color: var(--colour-orange-900);
+  border: 5px solid var(--colour-orange-900);
+  background-color: var(--colour-orange-200);
+}
+
+/*
+ MANIPULATING TARGETS
+*/
+
+ul#manipulating-targets-1,
+ul#manipulating-targets-2,
+ul#manipulating-targets-3,
+ul#manipulating-targets-4 {
+  list-style-type: none;
+  margin: 20px 0px 0px 0px;
+  padding: 0px;
+}
+
+ul#manipulating-targets-1 li,
+ul#manipulating-targets-2 li,
+ul#manipulating-targets-3 li,
+ul#manipulating-targets-4 li {
+  margin: 10px 0px;
+  padding: 20px 10px 20px 10px;
+  background-color: var(--colour-french-pass);
+  border-radius: 10px;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+ul#manipulating-targets-5 {
+  list-style-type: none;
+  margin: 20px 0px 0px 0px;
+  padding: 0px;
+}
+
+ul#manipulating-targets-5 li {
+  margin: 10px 0px;
+  padding: 20px 10px 20px 10px;
+  background-color: var(--colour-french-pass);
+  border-radius: 10px;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+ul#manipulating-targets-5 li {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+}
+
+ul#manipulating-targets-5 li h4 {
+  background-color: var(--colour-dark-grey-blue);
+  padding: 2rem 0;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+ul#manipulating-targets-5 li p {
+  font-size: 0.9rem;
+}
+
+/*
+ CHANGING CLASSES
+*/
+
+.mc-1 {
+  margin-top: 50px;
+}
+
+.mc-1 ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 3rem;
+  column-gap: 1rem;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mc-1 ul li {
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+  border-radius: 20px;
+  border: 5px solid var(--colour-dark-grey-blue);
+  background-color: var(--colour-french-pass);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.mc-1 ul li.done {
+  color: white;
+  background-color: var(--colour-darker-grey-blue);
+  border-color: var(--colour-dark-grey-blue);
+}
+
+/*
+ * FORM EXAMPLE
+ */
+
+.form-example {
+  background-color: var(--colour-french-pass);
+  border-radius: 1rem;
+  padding: 1rem;
+
+  margin: 12rem 0;
+
+}
+
+.form-example form {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  color: #fff;
+  background-color: var(--colour-blue-700);
+  display: flex;
+  flex-direction: column;
+}
+
+.form-example form label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-results {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.form-results li {
+  margin: 10px 0px;
+  padding: 20px 10px 20px 10px;
+  background-color: var(--colour-orange-200);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+/*
+ SCREEN READER UTILITY
+*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
