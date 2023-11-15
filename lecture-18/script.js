@@ -87,7 +87,7 @@ function handleWhenAUserClickedSubmit(event){
 // Put the data into an array and then display the array
 //
 
-
+// Add a comment
 let superHeroNameForm = document.getElementById("form-2");
 
 let superHeroNameInput = document.getElementById("name-input-1");
