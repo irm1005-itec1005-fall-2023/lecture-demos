@@ -40,7 +40,7 @@ function handleWhenAUserClickedSubmit(event){
 
   tempNumber.textContent = inputNumber.value;
 
-  numbersListOfThings.prepend(tempNumber);
+  numbersListOfThings.appendChild(tempNumber);
 
   inputNumber.value= "";
 
@@ -88,3 +88,48 @@ function handleWhenAUserClickedSubmit(event){
 //
 
 
+let superHeroNameForm = document.getElementById("form-2");
+
+let superHeroNameInput = document.getElementById("name-input-1");
+
+let superHeroList = document.getElementById("name-list-1");
+
+// Array of super heroes
+let superHeroArray = [];
+
+superHeroNameForm.addEventListener("submit", handleSuperHeroFormSubmit);
+
+function handleSuperHeroFormSubmit(event){
+
+  // Prevent the default behavior of the form
+  event.preventDefault();
+
+  // Get the value of the input
+  const inputValue = superHeroNameInput.value;
+
+  // Check that inputValue is not empty
+
+  // Push the new hero onto the array
+  superHeroArray.push(inputValue);
+
+  renderList(); // Call the renderList function
+
+}
+
+
+function renderList() {
+  console.log("Render List:", superHeroArray);
+
+  superHeroList.innerHTML = "";
+
+  for(let index = 0; index < superHeroArray.length; index++) {
+
+
+    let tempName = document.createElement("li");
+
+  tempName.textContent = superHeroArray[index];
+
+  superHeroList.prepend(tempName);
+
+  }
+}
