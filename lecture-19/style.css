@@ -50,13 +50,13 @@ https://coolors.co/palette/10002b-240046-3c096c-5a189a-7b2cbf-9d4edd-c77dff-e0aa
   --colour-blue-koi: #5fa8d3;
 
   /* Header configuration */
-  --header-heading-colour: var(--colour-orange-200);
-  --header-background-colour: var(--colour-orange-900);
+  --header-heading-colour: var(--colour-blue-200);
+  --header-background-colour: var(--colour-blue-900);
 
   /* Body configuration */
-  --body-default-colour: var(--colour-orange-950);
-  --body-background-colour: var(--colour-orange-200);
-  --body-heading-colour: var(--colour-orange-950);
+  --body-default-colour: var(--colour-blue-900);
+  --body-background-colour: var(--colour-blue-200);
+  --body-heading-colour: var(--colour-blue-900);
 }
 
 /*
