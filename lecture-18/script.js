@@ -94,8 +94,10 @@ let superHeroNameInput = document.getElementById("name-input-1");
 
 let superHeroList = document.getElementById("name-list-1");
 
+let superHeroCountP = document.getElementById("super-hero-count");
+
 // Array of super heroes
-let superHeroArray = [];
+let superHeroArray = ["Tony", "HawkEye"];
 
 superHeroNameForm.addEventListener("submit", handleSuperHeroFormSubmit);
 
@@ -132,4 +134,20 @@ function renderList() {
   superHeroList.prepend(tempName);
 
   }
+
+  if ( superHeroArray.length === 0 ) {
+    superHeroCountP.textContent = "No Super Heroes Yet - Blame Thanos!"
+  }
+  else {
+    superHeroCountP.textContent = "There are " + superHeroArray.length + " Super Heroes!";
+  }
+
+
 }
+
+// You can load array data from local storage
+// Do that here
+
+
+// Call it the first time
+renderList();
