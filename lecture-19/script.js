@@ -77,6 +77,8 @@ function renderData() {
       // Re-render the list
       renderData();
 
+      console.log(typeCount[i].type + " - " + typeCount[i].count)
+
     });
 
     tempListItem.appendChild(tempButton);
