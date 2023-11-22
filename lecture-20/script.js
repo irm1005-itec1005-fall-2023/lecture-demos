@@ -52,79 +52,91 @@ function superHeroListClickHandler(event){
 }
 
 
+// Super Hero Name App
+// Using the data attribute as a way to store the id of the item
 
-// // Create our variables
-// let superHeroArray = [];
-// let superHeroForm = document.getElementById("form-superhero");
-// let superHeroList = document.getElementById("superhero-name-list");
-// let superHeroInput = document.getElementById("name-input-1");
+
+// Create our variables
+let superHeroArray = [];
+let superHeroForm = document.getElementById("form-superhero");
+let superHeroList = document.getElementById("superhero-name-list-b");
+let superHeroInput = document.getElementById("name-input-B");
+
+
 
 // // Handle Submit Form
-// superHeroForm.addEventListener("submit", handleSubmitForm);
+superHeroForm.addEventListener("submit", handleSubmitForm);
 
-// function handleSubmitForm(event) {
+function handleSubmitForm(event) {
 
-//   // Prevent the default behavior of the form`
-//   event.preventDefault();
+  // Prevent the default behavior of the form`
+  event.preventDefault();
 
-//   // Grab the value from the input
-//   //console.log("Name of Superhero: ", superHeroInput.value);
+  // Grab the value from the input
+  //console.log("Name of Superhero: ", superHeroInput.value);
 
-//   // This is what you do in add to do app
-//   // addTodoItem(superHeroInput.value);
+  // This is what you do in add to do app
+  // addTodoItem(superHeroInput.value);
 
-//   superHeroArray.push(superHeroInput.value);
+  superHeroArray.push(superHeroInput.value);
 
-//   // Clear the input
-//   // superHeroInput.value = "";
-//   superHeroForm.reset();
+  // Clear the input
+  // superHeroInput.value = "";
+  superHeroForm.reset();
 
-//   // Draw the list
-//   renderData();
-// }
+  // Draw the list
+  renderData();
+}
 
 
 // // Render the data to the page
-// function renderData() {
+function renderData() {
 
-//   console.log("Render Data", superHeroArray);
+  console.log("Render Data", superHeroArray);
 
-//   // Clear the list
-//   superHeroList.innerHTML = "";
+  // Clear the list
+  superHeroList.innerHTML = "";
 
-//   for (let i=0; i < superHeroArray.length ; i++ ){
-//     let tempListItem = document.createElement("li");
+  for (let i=0; i < superHeroArray.length ; i++ ){
+    let tempListItem = document.createElement("li");
 
-//     tempListItem.textContent = superHeroArray[i];
+    tempListItem.textContent = superHeroArray[i];
 
-//     let tempButton = document.createElement("button");
+    let tempButton = document.createElement("button");
 
-//     tempButton.textContent = "Click me";
+    tempButton.textContent = "Click me";
 
-//     tempButton.dataset.super = i;
+    tempButton.dataset.super = i;
 
-    // // You can actually add an event handler here
-    // tempButton.addEventListener("click", function(event){
-    //   console.log("You clicked me");
+    tempListItem.appendChild(tempButton);
 
-    //   console.log("You clicked on", event.target.dataset.super);
+    superHeroList.appendChild(tempListItem);
 
-    //   // Remove this item from the array
-    //   superHeroArray.splice(event.target.dataset.super, 1);
-
-    //   // Re-render the list
-    //   renderData();
-
-    //   console.log(typeCount[i].type + " - " + typeCount[i].count)
-
-    // });
-
-//     tempListItem.appendChild(tempButton);
-
-//     superHeroList.appendChild(tempListItem);
-
-//   }
-// }
+  }
+}
 
 
 // Call renderlist for the first time
+
+
+
+superHeroList.addEventListener("click", superHeroListClickHandlerB )
+
+function superHeroListClickHandlerB(event){
+
+
+
+  if (event.target.tagName === "BUTTON"){
+    console.log("You clicked on a button");
+
+    console.log("The data superhero id", event.target.dataset.super)
+
+    var indexToRemove = event.target.dataset.super;
+
+    superHeroArray.splice(indexToRemove,1)
+
+  }
+
+  renderData();
+
+}
