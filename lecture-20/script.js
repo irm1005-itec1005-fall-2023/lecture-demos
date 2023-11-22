@@ -16,7 +16,40 @@ console.log("🥰 Lecture 20");
 //
 
 
+// const superHeroButton1 = document.getElementById("superhero-1");
 
+// superHeroButton1.addEventListener("click", clickButton1 )
+
+// function clickButton1 (event){
+//   console.log("Button 1 clicked");
+// }
+
+
+const superHeroListA = document.getElementById("superhero-name-list-a");
+
+
+superHeroListA.addEventListener("click", superHeroListClickHandler )
+
+function superHeroListClickHandler(event){
+  // console.log("You clicked inside the list", event.target);
+
+  if (event.target.tagName === "BUTTON"){
+    console.log("You clicked on a button");
+
+    console.log("The id of the button is", event.target.id);
+
+    console.log("The data superhero value is", event.target.dataset.superhero)
+
+    console.log("The data superhero id", event.target.dataset.id)
+
+    remoteTodoItem(event.target.dataset.id);
+    markTodoItemCompleted(event.target.dataset.id);
+
+    renderData();
+    renderList();
+
+  }
+}
 
 
 
@@ -70,21 +103,21 @@ console.log("🥰 Lecture 20");
 
 //     tempButton.dataset.super = i;
 
-//     // You can actually add an event handler here
-//     tempButton.addEventListener("click", function(event){
-//       console.log("You clicked me");
+    // // You can actually add an event handler here
+    // tempButton.addEventListener("click", function(event){
+    //   console.log("You clicked me");
 
-//       console.log("You clicked on", event.target.dataset.super);
+    //   console.log("You clicked on", event.target.dataset.super);
 
-//       // Remove this item from the array
-//       superHeroArray.splice(event.target.dataset.super, 1);
+    //   // Remove this item from the array
+    //   superHeroArray.splice(event.target.dataset.super, 1);
 
-//       // Re-render the list
-//       renderData();
+    //   // Re-render the list
+    //   renderData();
 
-//       console.log(typeCount[i].type + " - " + typeCount[i].count)
+    //   console.log(typeCount[i].type + " - " + typeCount[i].count)
 
-//     });
+    // });
 
 //     tempListItem.appendChild(tempButton);
 
