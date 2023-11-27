@@ -22,17 +22,46 @@ function myFunction() {
 }
 
 // This is a function expression
-
+const mySecondFunction = function() {
+  console.log("Hello from Function 2");
+}
 
 // This is an arrow function
+const myThirdFunction = () => {
+  console.log("Hello from Function 3");
+}
 
 
-const myPromise = new Promise((resolve, reject) => {
-  // This is where we do our asynchronous code
-  // We can call resolve or reject to tell the promise what to do
-  resolve("Hello from Promise");
-  //reject("Error from Promise");
+// This is a promise
+const myFirstPromise = new Promise((resolve,reject) => {
+  let i = 1 + 1;
+
+  if (i === 2) {
+    resolve("Success");
+  }
+  else {
+    reject("Failed");
+  }
+
 });
+
+myFirstPromise
+  .then((message) => {
+    console.log("This is the then", message);
+  })
+  .catch((message) => {
+    console.log("This is the catch", message);
+  })
+
+
+console.log("Hello from the Bottom of the Code");
+
+// const myPromise = new Promise((resolve, reject) => {
+//   // This is where we do our asynchronous code
+//   // We can call resolve or reject to tell the promise what to do
+//   resolve("Hello from Promise");
+//   //reject("Error from Promise");
+// });
 
 // We can use .then to handle the resolve
 
@@ -43,7 +72,6 @@ const myPromise = new Promise((resolve, reject) => {
 //   console.log(value);
 // }) // We can use .catch to handle the reject
 
-console.log("Hello from the Bottom of the Code");
 
 // Let's fetch some data
 // Fetch is a way to make a request to a server
@@ -52,9 +80,30 @@ console.log("Hello from the Bottom of the Code");
 // We can use fetch to get data from a server
 
 // Fetch this API https://pokeapi.co/api/v2/pokemon/1
+
+console.log(fetch("https://pokeapi.co/api/v2/pokemon/1"));
+
+
 // Then unpack the response data using response.json()
 // Then console.log the data
 // Catch any errors and console.log them
+
+
+fetch("https://pokeapi.co/api/v2/pokemon/33")
+  .then((response) => {
+    // console.log("This is the response from Pokemon", response);
+    return response.json();
+  })
+  .then((data) => {
+    console.log("This is the data from Pokemon", data);
+
+    renderPokemonList(data);
+
+  })
+  .catch((message) => {
+    console.log("This is the catch", message);
+  })
+
 
 
 
