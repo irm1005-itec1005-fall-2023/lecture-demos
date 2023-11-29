@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+
+<head>
+  <!-- Set the page title -->
+  <title>Lecture Demo</title>
+
+  <!-- Set the charset we're using to UTF-8 -->
+  <meta charset="utf-8" />
+
+  <!-- Set the screens default zoom / scale to 1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Specifies the document mode for Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Set the CSS Reset File -->
+  <link rel="stylesheet" href="./reset.css" />
+
+  <!-- Set some basic CSS for the header and body -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Set the Favicon  -->
+  <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+
+</head>
+
+<body>
+
+  <main>
+
+    <h1>Got to search them all!</h1>
+
+    <form id="search-pokemon-form" class="search-pokemon">
+      <label for="pokemon-name">Pokemon number (1-1024):</label>
+      <input
+        type="number"
+        name="pokemon-number"
+        id="pokemon-number"
+        min="1"
+        max="1024"
+        value="44"
+        required
+      />
+      <input type="submit" value="Load Pokemon" />
+    </form>
+
+    <section>
+      <h2 class="sr-only">Pokemon Information:</h2>
+
+      <div class="empty-state">
+        <p>No pokemon loaded</p>
+      </div>
+
+      <div class="pokemon-container">
+        <!--
+        <div class="pokemon">
+          <h3 class="name">Kingler</h3>
+          <p class="id">#99</p>
+          <img class="image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/99.png" alt="Kingler" />
+          <ul class="types">
+            <li>
+              Water
+            </li>
+          </ul>
+        </div>
+        -->
+      </div>
+
+    </section>
+
+  </main>
+
+  <!--
+    Add scripts at the bottom of the page
+
+    This is so that the browser can load the HTML and CSS first, and then bolt on the JS
+
+    Some tutorials, youtube videos, and chatGPT may
+    say to put scripts at the top, but you know better now!
+  -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
