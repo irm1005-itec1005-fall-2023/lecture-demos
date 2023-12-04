@@ -118,6 +118,70 @@ main .pokemon {
   font-size: 1.4rem;
 
   /* Add grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+
+  animation: pokemon-fly-in 1s;
+}
+
+@keyframes pokemon-fly-in {
+  0% {
+    transform: translateX(-200px);
+    scale: 0.1;
+    opacity: 0;
+    rotate: 10deg;
+  }
+  50% {
+    transform: scale(2);
+    rotate: -10deg;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+    rotate: 0deg;
+  }
+}
+
+main .pokemon .image {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .pokemon .name {
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+main .pokemon .id {
+  text-align: right;
+  font-size: 1.4rem;
+}
+
+main .pokemon .types {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 1.4rem;
+
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+main .pokemon .types li {
+  background-color: #003049;
+  color: #f4de52;
+  padding: 5px 30px;
+  border-radius: 10px;
+
+  margin-top: 0.8rem;
 }
 
 /*
