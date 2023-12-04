@@ -3,7 +3,7 @@
 
 <head>
   <!-- Set the page title -->
-  <title>Lecture Demo</title>
+  <title>Final Prep</title>
 
   <!-- Set the charset we're using to UTF-8 -->
   <meta charset="utf-8" />
@@ -27,59 +27,24 @@
 
 <body>
 
+  <header>
+    <h2 class="sr-only">Site Header</h2>
+    <img src="https://picsum.photos/200/300" alt="Random image" />
+    <nav>
+      <h3 class="sr-only">Site navigation</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+    </nav>
+  </header>
   <main>
-
-    <h1>Got to search them all!</h1>
-
-    <form id="search-pokemon-form" class="search-pokemon">
-      <label for="pokemon-name">Pokemon number (1-1024):</label>
-      <input
-        type="number"
-        name="pokemon-number"
-        id="pokemon-number"
-        min="1"
-        max="1024"
-        value="44"
-        required
-      />
-      <input type="submit" value="Load Pokemon" />
-    </form>
-
-    <!--
-
-        Add a section
-        Inside that section add a hidden heading
-        An empty state div
-        A pokemon container div
-
-    -->
-
-    <!--
-    <div class="empty-state">
-      <p>You have not searched for a pokemon</p>
-    </div>
-    -->
-
-    <!-- The plural of pokemon is pokemon -->
-    <!-- Max of two types -->
-
-    <section>
-      <div class="pokemon-container">
-      </div>
-    </section>
-
-
 
   </main>
 
-  <!--
-    Add scripts at the bottom of the page
-
-    This is so that the browser can load the HTML and CSS first, and then bolt on the JS
-
-    Some tutorials, youtube videos, and chatGPT may
-    say to put scripts at the top, but you know better now!
-  -->
   <script src="./script.js"></script>
 
 </body>

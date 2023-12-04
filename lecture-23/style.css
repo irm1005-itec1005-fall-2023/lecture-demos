@@ -1,12 +1,11 @@
 /*
  * CSS File for the solution
- * Tutorial 22 - Pokemon API
+ * Final Prep
  *
  *
- * Photo by Carolina Castilla Arias:
- * https://www.pexels.com/photoclose-up-photo-of-pokemon-pikachu-figurine-1716861/
+ *
+ *
  */
-
 
 
  body {
@@ -14,15 +13,14 @@
   font-family: sans-serif;
   background-color: #fdf0d5;
 
-  background: url("./images/pica.jpg") center no-repeat;
-  background-size: cover;
+
   min-height: 100vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+/*
 main {
   max-width: 500px;
   min-width: 500px;
@@ -30,163 +28,11 @@ main {
   border-radius: 35px;
   background-color: #f0f7c3;
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
+} */
+/*
 main h1 {
   font-size: 2rem;
-}
-
-
-/*
- * SEARCH POKEMON FORM
- */
-
-form.search-pokemon {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 0.5rem;
-  margin-bottom: 30px;
-}
-
-form.search-pokemon label {
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-
-input[type="number"] {
-  grid-column-start: 1;
-  grid-column-end: 3;
-
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
-
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
-}
-
-input[type="submit"] {
-  background-color: #003049;
-  border: none;
-  color: white;
-  font-weight: bold;
-  padding: 10px 10px;
-  text-decoration: none;
-  cursor: pointer;
-
-  border-radius: 10px;
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
-}
-
-/*
- * EMPTY STATE
- */
-
-main .empty-state {
-  margin: 10px 0px 10px 0px;
-  border: 10px solid #003049;
-  padding: 20px;
-  border-radius: 20px;
-
-  background-color: #f4de52;
-  text-align: center;
-  font-size: 1.4rem;
-}
-
-main .hidden {
-  display: none;
-}
-
-
-
-/*
- * POKEMON ITEM CONTAINER
- */
-
-
-/*
- * POKEMON ITEM CARD
- */
-
-main .pokemon {
-  margin: 10px 0px 10px 0px;
-  border: 10px solid #003049;
-  padding: 20px 30px 20px 30px;
-  border-radius: 20px;
-
-  background-color: #f4de52;
-  text-align: center;
-  font-size: 1.4rem;
-
-  /* Add grid */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.5rem;
-
-  animation: pokemon-fly-in 1s;
-}
-
-@keyframes pokemon-fly-in {
-  0% {
-    transform: translateX(-200px);
-    scale: 0.1;
-    opacity: 0;
-    rotate: 10deg;
-  }
-  50% {
-    transform: scale(2);
-    rotate: -10deg;
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-    rotate: 0deg;
-  }
-}
-
-main .pokemon .image {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  height: 200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-main .pokemon .name {
-  text-align: left;
-  font-size: 1.4rem;
-}
-
-main .pokemon .id {
-  text-align: right;
-  font-size: 1.4rem;
-}
-
-main .pokemon .types {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  font-size: 1.4rem;
-
-  list-style-type: none;
-  text-align: left;
-  margin: 0;
-  padding: 0;
-
-  display: flex;
-  justify-content: space-between;
-}
-
-main .pokemon .types li {
-  background-color: #003049;
-  color: #f4de52;
-  padding: 5px 30px;
-  border-radius: 10px;
-
-  margin-top: 0.8rem;
-}
-
-/*
- * POKEITEM ANNIMATION
- */
+} */
 
 
 /*
