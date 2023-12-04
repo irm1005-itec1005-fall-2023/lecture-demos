@@ -27,23 +27,88 @@
 
 <body>
 
-  <header>
-    <h2 class="sr-only">Site Header</h2>
-    <img src="https://picsum.photos/200/300" alt="Random image" />
-    <nav>
-      <h3 class="sr-only">Site navigation</h3>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Popular</a></li>
-        <li><a href="#">Trending</a></li>
-        <li><a href="#">Categories</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
+  <div class="container">
+    <header>
+      <h2 class="sr-only">Site Header</h2>
+      <img src="https://picsum.photos/200/300" alt="Random image" />
+      <nav>
+        <h3 class="sr-only">Site navigation</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 
-  </main>
+  <div class="container">
+    <main>
+
+      <div class="content-grid">
+
+        <!-- Hero Article -->
+
+        <img class="hero-image" src="https://picsum.photos/700/400" alt="Random image" />
+        <h1>The future is bright</h1>
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nobis dolore excepturi, est perspiciatis
+            quos.</p>
+            <div class="btn-container">
+              <a class="primary-btn" href="#">Read More</a>
+            </div>
+
+        </div>
+
+
+
+        <!-- List 1 -->
+        <div class="short-articles">
+          <section>
+            <h2>New</h2>
+            <ul>
+              <li>
+                <section>
+                  <h3>Lorem ipsum dolor sit.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore illum quasi quia earum delectus!</p>
+                </section>
+              </li>
+              <li>
+                <section>
+                  <h3>Lorem ipsum dolor sit.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore illum quasi quia earum delectus!</p>
+                </section>
+              </li>
+              <li>
+                <section>
+                  <h3>Lorem ipsum dolor sit.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore illum quasi quia earum delectus!</p>
+                </section>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+
+        <!-- List 2 -->
+        <div class="long-articles">
+          <section>
+            <h2>New</h2>
+            <ul>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
+          </section>
+        </div>
+
+
+      </div>
+
+    </main>
+  </div>
 
   <script src="./script.js"></script>
 

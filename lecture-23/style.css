@@ -13,13 +13,146 @@
   font-family: sans-serif;
   background-color: #fdf0d5;
 
+}
 
-  min-height: 100vh;
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+
+  padding: 2rem 0 2rem 0;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
+
+header img {
+  width: 75px;
+  height: 75px;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 1rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #828282;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+header nav ul li a:hover {
+  color: #003049;
+  background-color: #003049;
+  border-radius: 1rem;
+  transition: 0.5s all ease-in;
+}
+
+
+
+main .content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+main .content-grid .short-articles {
+  height: 100%;
+  background-color: #202020;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  font-size: 0.9rem;
+
+  padding: 1rem;
+}
+
+main .content-grid .short-articles h2 {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0;
+  /* padding: 0.5rem 0; */
+  color: yellow;
+}
+
+main .content-grid .short-articles ul {
+  color: #fdf0d5;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+main .content-grid .short-articles ul li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #d2ae67;
+}
+
+main .content-grid .short-articles ul li h3 {
+  color: #fdf0d5;
+}
+
+main .content-grid .short-articles ul li p {
+  color: #d2ae67;
+}
+
+main .content-grid .short-articles ul li:last-child {
+  border-bottom: none;
+}
+
+
+main .content-grid .long-articles {
+  background-color: #202020;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+main .content-grid .hero-image {
+  width: 100%;
+  border: 1px solid #202020;
+  background-color: #202020;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+main h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+/*
+main .btn-container {
+  margin: 1rem 0;
+} */
+
+main .primary-btn {
+  display: inline-block;
+  background-color: #003049;
+  color: #fdf0d5;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
 /*
 main {
   max-width: 500px;
